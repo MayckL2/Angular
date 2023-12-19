@@ -1,0 +1,6 @@
+<p *ngIf="canShow">if-render works!</p>
+<p *ngIf="1 != 1">if-render condicional works!</p>
+<p *ngIf="age >= 18 else notOlder">User is older than 18 years.</p>
+<ng-template #notOlder>
+    <p>User is under 18 years, i gonna call your parents.</p>
+</ng-template>
