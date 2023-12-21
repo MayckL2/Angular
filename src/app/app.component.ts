@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'thirdAngular';
   jobName: string = 'Carpinteiro'
+
+  console(){
+    console.log('funfou')
+  }
 }
