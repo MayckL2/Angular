@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Animal } from '../../Animal';
+import { ListService } from '../../services/list.service';
 
 @Component({
   selector: 'app-list',
@@ -17,5 +18,13 @@ export class ListComponent {
   animal = {
     name: 'teste',
     type: 'type teste'
+  }
+
+  // importa serviço
+  constructor(private listService: ListService){}
+  // utiliza função do serviço
+  removeAnimal(animal: Animal){
+    this.animals = this.listService.remove(this.animals, animal)
+    console.log(animal.name + ' foi removido!')
   }
 }

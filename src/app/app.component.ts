@@ -9,7 +9,13 @@ export class AppComponent {
   title: string = 'thirdAngular';
   jobName: string = 'Carpinteiro'
 
-  console(){
-    console.log('funfou')
+  constructor() {
+    this.req()
+  }
+
+  async req() {
+    fetch('https://hospedagem-mongodb.vercel.app/user')
+      .then((res) => res.json())
+      .then((data) => console.log(data))
   }
 }
