@@ -1,12 +1,21 @@
 <h1>Hello world again again</h1>
 <a routerLink="/">Home</a><br>
-<a routerLink="/list">Lista</a>
+<a routerLink="/list">Lista</a><br>
+<a routerLink="/data">Data</a><br>
+<a routerLink="/directives">Directives</a><br>
+<a routerLink="/event">Event</a><br>
+<a routerLink="/hooks">Hooks</a><br>
+<a routerLink="/ifRender">If Render</a><br>
+<!-- <a routerLink="/output">Output</a><br><br> -->
+<hr>
 <router-outlet></router-outlet>
 <!-- <app-first-component [job]="jobName"></app-first-component>
 <app-directives></app-directives>
 <app-if-render></app-if-render>
 <app-event></app-event>
-<br>
-<app-output (changeNumber)="console()"></app-output>
-<app-list></app-list>
-<app-data-biding></app-data-biding> -->
+<br>-->
+<br><app-output (changeNumber)="req()"></app-output>
+<!-- <app-list></app-list>
+<app-data-biding></app-data-biding>
+<app-hooks [message]="message"></app-hooks>
+<input type="text" [(ngModel)]="message"> -->

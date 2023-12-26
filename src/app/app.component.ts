@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'thirdAngular';
   jobName: string = 'Carpinteiro'
-
+  message: string = ''
+  
   constructor() {
     this.req()
   }

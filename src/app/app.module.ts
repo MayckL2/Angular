@@ -11,6 +11,7 @@ import { EventComponent } from './components/event/event.component';
 import { OutputComponent } from './components/output/output.component';
 import { ListComponent } from './components/list/list.component';
 import { DataBidingComponent } from './components/data-biding/data-biding.component';
+import { HooksComponent } from './components/hooks/hooks.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DataBidingComponent } from './components/data-biding/data-biding.compon
     EventComponent,
     OutputComponent,
     ListComponent,
-    DataBidingComponent
+    DataBidingComponent,
+    HooksComponent
   ],
   imports: [
     BrowserModule,
